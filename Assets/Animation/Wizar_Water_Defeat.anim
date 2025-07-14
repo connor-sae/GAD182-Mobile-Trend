@@ -471,7 +471,18 @@ AnimationClip:
     classID: 1
     script: {fileID: 0}
     flags: 0
-  m_PPtrCurves: []
+  m_PPtrCurves:
+  - serializedVersion: 2
+    curve:
+    - time: 0
+      value: {fileID: -273042590, guid: 92405d36410aacc46a2ab0cb4a71028a, type: 3}
+    - time: 2.6
+      value: {fileID: 524326080, guid: 92405d36410aacc46a2ab0cb4a71028a, type: 3}
+    attribute: m_Sprite
+    path: Root/wizar_Head/Wizar_eyes
+    classID: 212
+    script: {fileID: 0}
+    flags: 2
   m_SampleRate: 60
   m_WrapMode: 0
   m_Bounds:
@@ -632,7 +643,18 @@ AnimationClip:
       isPPtrCurve: 0
       isIntCurve: 0
       isSerializeReferenceCurve: 0
-    pptrCurveMapping: []
+    - serializedVersion: 2
+      path: 410064445
+      attribute: 0
+      script: {fileID: 0}
+      typeID: 212
+      customType: 23
+      isPPtrCurve: 1
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
+    pptrCurveMapping:
+    - {fileID: -273042590, guid: 92405d36410aacc46a2ab0cb4a71028a, type: 3}
+    - {fileID: 524326080, guid: 92405d36410aacc46a2ab0cb4a71028a, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}

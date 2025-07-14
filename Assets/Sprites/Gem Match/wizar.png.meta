@@ -319,6 +319,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: wizar_eyes_dead
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 1193
+        width: 88
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b6815ebcf7147740b7a76faff5ebb12
+      internalID: 524326080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -341,6 +362,7 @@ TextureImporter:
       wizar_Mouth_2: 1771980233
       wizar_Mouth_3: 751383784
       wizar_Mouth_4: -557742913
+      wizar_eyes_dead: 524326080
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

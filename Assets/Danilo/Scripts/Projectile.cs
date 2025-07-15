@@ -10,7 +10,7 @@ public class Projectile : MonoBehaviour
 
     private void Start()
     {
-        // Destroy the projectile after a few seconds to avoid clutter
+        //destroy projectile after a while
         Destroy(gameObject, lifetime);
     }
 

@@ -4,18 +4,20 @@ using UnityEngine;
 
 public class PlayerShooter : MonoBehaviour
 {
-    public GameObject projectilePrefab;  // Assign your projectile prefab in Inspector
-    public Transform firePoint;          // Where the projectile spawns (e.g., a point in front of player)
+    public GameObject projectilePrefab;  
+    public Transform firePoint;          
 
     void Update()
     {
-        if (Input.GetButtonDown("Fire1")) // Left mouse or Ctrl
+        //if player is clicling left click shoot projectile
+        if (Input.GetButtonDown("Fire1")) 
         {
             Debug.Log("shooting");
             Shoot();
         }
     }
 
+    //when called instantiate the projectile prefab
     void Shoot()
     {
         if (projectilePrefab == null || firePoint == null)

@@ -7,7 +7,7 @@ public class Projectile : MonoBehaviour
     public float speed = 20f;
     public int damage = 10;
     public float lifetime = 5f;
-
+    public GameObject explosionVisualPrefab;
     private int hitCount = 0;
 
     private void Start()
@@ -60,7 +60,7 @@ public class Projectile : MonoBehaviour
 
     void Explode()
     {
-        float radius = 5f + PlayerUpgrades.Instance.explodingLevel * 3.5f;
+        float radius = 3f + PlayerUpgrades.Instance.explodingLevel * 1.5f;
         Collider[] hits = Physics.OverlapSphere(transform.position, radius);
 
         foreach (Collider hit in hits)
@@ -68,6 +68,15 @@ public class Projectile : MonoBehaviour
             Enemies enemy = hit.GetComponent<Enemies>();
             if (enemy != null)
                 enemy.TakeDamage(damage);
+        }
+
+        // Visualize the explosion radius
+        if (explosionVisualPrefab != null)
+        {
+            GameObject visual = Instantiate(explosionVisualPrefab, transform.position, Quaternion.identity);
+            visual.transform.localScale = Vector3.one * radius * 2f; // scale to diameter
+
+            Destroy(visual, 0.3f); // auto-destroy visual after 0.5s
         }
 
         Debug.Log("Explosion triggered. Radius: " + radius);

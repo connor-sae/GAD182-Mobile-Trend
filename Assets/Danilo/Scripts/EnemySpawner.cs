@@ -52,7 +52,7 @@ public class EnemySpawner : MonoBehaviour
         Transform spawnPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];
 
         //spawn an enemy at the spawnpoint
-        Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
+        Instantiate(enemyPrefab, spawnPoint.position, Quaternion.identity);
         Debug.Log("Enemy spawned at: " + spawnPoint.position);
     }
 }

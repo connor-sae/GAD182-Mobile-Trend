@@ -84,7 +84,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 50
-  moveSpeed: 3
+  moveSpeed: 8
   damage: 10
 --- !u!54 &3455401204121025744
 Rigidbody:

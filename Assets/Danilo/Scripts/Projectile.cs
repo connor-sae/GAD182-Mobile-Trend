@@ -60,7 +60,7 @@ public class Projectile : MonoBehaviour
 
     void Explode()
     {
-        float radius = 3f + PlayerUpgrades.Instance.explodingLevel * 1.5f;
+        float radius = 5f + PlayerUpgrades.Instance.explodingLevel * 3.5f;
         Collider[] hits = Physics.OverlapSphere(transform.position, radius);
 
         foreach (Collider hit in hits)

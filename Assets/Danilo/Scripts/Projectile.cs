@@ -58,6 +58,7 @@ public class Projectile : MonoBehaviour
         }
     }
 
+    
     void Explode()
     {
         float radius = 3f + PlayerUpgrades.Instance.explodingLevel * 1.5f;
@@ -70,13 +71,13 @@ public class Projectile : MonoBehaviour
                 enemy.TakeDamage(damage);
         }
 
-        // Visualize the explosion radius
+        //visualize the radius by using the explosion radius' stat and destroy the game object after 0.3 seconds
         if (explosionVisualPrefab != null)
         {
             GameObject visual = Instantiate(explosionVisualPrefab, transform.position, Quaternion.identity);
-            visual.transform.localScale = Vector3.one * radius * 2f; // scale to diameter
+            visual.transform.localScale = Vector3.one * radius * 2f; 
 
-            Destroy(visual, 0.3f); // auto-destroy visual after 0.5s
+            Destroy(visual, 0.3f); 
         }
 
         Debug.Log("Explosion triggered. Radius: " + radius);

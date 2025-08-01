@@ -15,6 +15,7 @@ public class Pin : MonoBehaviour
         pinAnim = GetComponentInChildren<Animator>();
     }
 
+    
     public void UnBlock() { blocked = false; }
 
 

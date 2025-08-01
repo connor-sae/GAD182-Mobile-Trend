@@ -122,6 +122,9 @@ public class BoxController : MonoBehaviour
             Destroy(gemGrid[pos.x, pos.y].gameObject);
             gemGrid[pos.x, pos.y] = null;
 
+            if (GemMatchManager.Instance.gameOver)
+                yield break;
+
             if (!instant)
             {
                 GemMatchManager.Instance.IncreaseScore();

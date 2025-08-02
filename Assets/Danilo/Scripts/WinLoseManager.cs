@@ -55,12 +55,12 @@ public class WinLoseManager : MonoBehaviour
         if (didWin)
         {
             winScreen.SetActive(true);
-            Debug.Log("You survived! You win!");
+            ScreenLogger.Log("You survived! You win!");
         }
         else
         {
             loseScreen.SetActive(true);
-            Debug.Log("You died! Game over.");
+            ScreenLogger.Log("You died! Game over.");
         }
 
         // Optional: Freeze the game

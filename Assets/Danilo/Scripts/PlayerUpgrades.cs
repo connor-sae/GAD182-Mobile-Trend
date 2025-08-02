@@ -30,15 +30,15 @@ public class PlayerUpgrades : MonoBehaviour
         {
             case Upgrades.UpgradeType.Faster:
                 fasterLevel++;
-                Debug.Log("Faster upgraded to level " + fasterLevel);
+                ScreenLogger.Log("Faster upgraded to level " + fasterLevel);
                 break;
             case Upgrades.UpgradeType.Piercing:
                 piercingLevel++;
-                Debug.Log("Piercing upgraded to level " + piercingLevel);
+                ScreenLogger.Log("Piercing upgraded to level " + piercingLevel);
                 break;
             case Upgrades.UpgradeType.Exploding:
                 explodingLevel++;
-                Debug.Log("Exploding upgraded to level " + explodingLevel);
+                ScreenLogger.Log("Exploding upgraded to level " + explodingLevel);
                 break;
         }
     }

@@ -53,7 +53,5 @@ public class ScreenLogger : MonoBehaviour
         }
 
         logs[0] = newLog;
-        logs[0].Push();
-        
     }
 }

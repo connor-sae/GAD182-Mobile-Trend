@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 [RequireComponent(typeof(TMP_Text))]
@@ -23,7 +24,14 @@ public class LogObject : MonoBehaviour
         {
             tmp_text.text = text;
         }
+        //appear
+        if(logAnimator != null)
+        {
+            logAnimator.SetTrigger("Appear");
+        }
     }
+
+    
 
     public void Push()
     {

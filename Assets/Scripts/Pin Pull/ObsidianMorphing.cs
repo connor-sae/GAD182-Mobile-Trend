@@ -8,6 +8,8 @@ public class ObsidianMorphing : MonoBehaviour
 {
     public int[] ConversionLayers;
     public int ObsidianLayerIndex;
+    public float forceNearConvertTime = 3;
+    public float nearConvertRadius = 0.2f;
     bool converted = false;
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -17,14 +19,45 @@ public class ObsidianMorphing : MonoBehaviour
 
         if(ConversionLayers.Contains(collision.gameObject.layer))
         {
-            collision.gameObject.layer = ObsidianLayerIndex;
-            collision.collider.GetComponent<Rigidbody2D>().isKinematic = true;
-            collision.collider.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
-
-            gameObject.layer = ObsidianLayerIndex;
-            GetComponent<Rigidbody2D>().isKinematic = true;
-            GetComponent<Rigidbody2D>().velocity = Vector2.zero;
-            converted = true;
+            Convert(collision.gameObject);
         }
+    }
+
+    public void Convert(GameObject otherObj)
+    {
+        otherObj.layer = ObsidianLayerIndex;
+        otherObj.GetComponent<Rigidbody2D>().isKinematic = true;
+        otherObj.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+        StartCoroutine(otherObj.GetComponent<ObsidianMorphing>().ConvertRoutine());
+
+        gameObject.layer = ObsidianLayerIndex;
+        GetComponent<Rigidbody2D>().isKinematic = true;
+        GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+        converted = true;
+        //Invoke("ConvertNear", forceNearConvertTime);
+    }
+
+    public IEnumerator ConvertRoutine()
+    {
+        yield return new WaitForSeconds(forceNearConvertTime);
+        ConvertNear();
+    }
+
+
+    private void ConvertNear()
+    {
+        LayerMask waterLavaLayer = (1 << 6) | (1 << 7); // 192
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, nearConvertRadius, waterLavaLayer);
+
+        foreach(Collider2D collider in colliders)
+        {
+            if (collider.gameObject.layer == 7) Debug.Log("Convert");
+            Convert(collider.gameObject);
+        }
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawWireSphere(transform.position, nearConvertRadius);
     }
 }

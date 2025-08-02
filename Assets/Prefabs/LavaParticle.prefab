@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 2957445430312431937}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.68110114, y: 1.9328897, z: 0.034120392}
+  m_LocalPosition: {x: -0.68110114, y: 1.9328897, z: 5}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -163,3 +163,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ConversionLayers: 0600000008000000
   ObsidianLayerIndex: 8
+  forceNearConvertTime: 0.12
+  nearConvertRadius: 0.8

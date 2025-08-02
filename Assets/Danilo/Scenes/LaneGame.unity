@@ -1181,7 +1181,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   logPrefab: {fileID: 2294818246661387865, guid: 175a7922afcc76c4d9913f9da13adf0e, type: 3}
-  maxLogLength: 5
+  maxLogLength: 6
   logPos: {fileID: 1269615763}
 --- !u!4 &1062067919
 Transform:
@@ -1563,8 +1563,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 32, y: -104}
-  m_SizeDelta: {x: 490.9962, y: 100}
+  m_AnchoredPosition: {x: 14, y: 4}
+  m_SizeDelta: {x: 490.9962, y: 48.6236}
   m_Pivot: {x: 0, y: 0}
 --- !u!1 &1328736951
 GameObject:

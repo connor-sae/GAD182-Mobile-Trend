@@ -37,7 +37,11 @@ public class MenuManager : MonoBehaviour
             
             if (Input.GetKeyDown(KeyCode.DownArrow))
                 Swipe(-1);
-            
+
+            if(Input.GetKeyDown(KeyCode.Return))
+            {
+                menuItems[currentItem].Load();
+            }
         }
     }
 

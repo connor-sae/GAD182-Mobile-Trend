@@ -32,6 +32,11 @@ public class SceneLoader : MonoBehaviour
         StartCoroutine(Transition());
     }
 
+    public void LoadRandom(string sceneNamePrefix, int sceneCount)
+    {
+        Load(sceneNamePrefix.ToString() + Random.Range(0, sceneCount));
+    }
+
     private IEnumerator Transition()
     {
         TransitionCanvas.SetActive(true);

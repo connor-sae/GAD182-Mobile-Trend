@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Gem Match
   image: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
-  scene:
-    m_Handle: 0
+  sceneName: Gem Match
+  sceneCount: 1

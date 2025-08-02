@@ -10,5 +10,13 @@ public class MenuItem : ScriptableObject
 {
     public new string name;
     public Sprite image;
-    public string sceneName;
+    public int sceneCount = 1;
+
+    public void Load()
+    {
+        if (sceneCount <= 1)
+            SceneLoader.Instance.Load(name);
+        else
+            SceneLoader.Instance.LoadRandom(name, sceneCount);
+    }
 }

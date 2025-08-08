@@ -34,6 +34,11 @@ public class wizarController : MonoBehaviour
         anim?.SetBool("Moving", true);
     }
 
+    public void MoveDelayed(float delay)
+    {
+        Invoke("Move", delay);
+    }
+
     public void PopNavPoint(Transform navPoint)
     {
         navPoints.Remove(navPoint);

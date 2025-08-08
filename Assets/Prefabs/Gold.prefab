@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6392252566831813501}
   - component: {fileID: 6620988387798979115}
   - component: {fileID: 199257915581845018}
+  - component: {fileID: 6137233019791511335}
   m_Layer: 9
   m_Name: coin (7)
   m_TagString: Gold
@@ -136,7 +137,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0.1
   m_AngularDrag: 1.5
-  m_GravityScale: 1
+  m_GravityScale: 1.8
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -148,6 +149,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &6137233019791511335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284145046194089168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7670298fa07587a4292870b9adb37966, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &676887452210262021
 GameObject:
   m_ObjectHideFlags: 0
@@ -160,6 +173,7 @@ GameObject:
   - component: {fileID: 548863432990049740}
   - component: {fileID: 7445463244899147256}
   - component: {fileID: 8405428777771664141}
+  - component: {fileID: 1185140385480566689}
   m_Layer: 9
   m_Name: coin (16)
   m_TagString: Gold
@@ -284,7 +298,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0.1
   m_AngularDrag: 1.5
-  m_GravityScale: 1
+  m_GravityScale: 1.8
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -296,6 +310,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1185140385480566689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 676887452210262021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7670298fa07587a4292870b9adb37966, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1055383720325736810
 GameObject:
   m_ObjectHideFlags: 0
@@ -308,6 +334,7 @@ GameObject:
   - component: {fileID: 8213224588350226131}
   - component: {fileID: 5405831075306794619}
   - component: {fileID: 1720136934025931683}
+  - component: {fileID: 1466684954474007392}
   m_Layer: 9
   m_Name: coin (1)
   m_TagString: Gold
@@ -432,7 +459,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0.1
   m_AngularDrag: 1.5
-  m_GravityScale: 1
+  m_GravityScale: 1.8
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -444,6 +471,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1466684954474007392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055383720325736810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7670298fa07587a4292870b9adb37966, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1149571258976406436
 GameObject:
   m_ObjectHideFlags: 0
@@ -456,6 +495,7 @@ GameObject:
   - component: {fileID: 4466682166562226035}
   - component: {fileID: 4602248517889047606}
   - component: {fileID: 8629359373395961293}
+  - component: {fileID: 9220959349676248420}
   m_Layer: 9
   m_Name: coin (22)
   m_TagString: Gold
@@ -580,7 +620,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0.1
   m_AngularDrag: 1.5
-  m_GravityScale: 1
+  m_GravityScale: 1.8
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -592,6 +632,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &9220959349676248420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1149571258976406436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7670298fa07587a4292870b9adb37966, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1339171318691570764
 GameObject:
   m_ObjectHideFlags: 0
@@ -604,6 +656,7 @@ GameObject:
   - component: {fileID: 2244578008748368546}
   - component: {fileID: 695677929071312321}
   - component: {fileID: 3272500801123772830}
+  - component: {fileID: 2189793370574922578}
   m_Layer: 9
   m_Name: coin (12)
   m_TagString: Gold
@@ -728,7 +781,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0.1
   m_AngularDrag: 1.5
-  m_GravityScale: 1
+  m_GravityScale: 1.8
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -740,6 +793,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &2189793370574922578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1339171318691570764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7670298fa07587a4292870b9adb37966, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1509388002460572212
 GameObject:
   m_ObjectHideFlags: 0
@@ -752,6 +817,7 @@ GameObject:
   - component: {fileID: 4081644472360857759}
   - component: {fileID: 2908349693149200795}
   - component: {fileID: 1850266431678704038}
+  - component: {fileID: 5800313466683758223}
   m_Layer: 9
   m_Name: coin (3)
   m_TagString: Gold
@@ -876,7 +942,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0.1
   m_AngularDrag: 1.5
-  m_GravityScale: 1
+  m_GravityScale: 1.8
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -888,6 +954,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &5800313466683758223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1509388002460572212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7670298fa07587a4292870b9adb37966, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3415592096799462157
 GameObject:
   m_ObjectHideFlags: 0
@@ -900,6 +978,7 @@ GameObject:
   - component: {fileID: 5940938025474512784}
   - component: {fileID: 8467785518046701630}
   - component: {fileID: 4391074570066449239}
+  - component: {fileID: 4230953403309199345}
   m_Layer: 9
   m_Name: coin (18)
   m_TagString: Gold
@@ -1024,7 +1103,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0.1
   m_AngularDrag: 1.5
-  m_GravityScale: 1
+  m_GravityScale: 1.8
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -1036,6 +1115,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &4230953403309199345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3415592096799462157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7670298fa07587a4292870b9adb37966, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3854781807941745196
 GameObject:
   m_ObjectHideFlags: 0
@@ -1048,6 +1139,7 @@ GameObject:
   - component: {fileID: 9094866856020390088}
   - component: {fileID: 5889857347936171868}
   - component: {fileID: 2030727603894903618}
+  - component: {fileID: 6195908805250344830}
   m_Layer: 9
   m_Name: coin (11)
   m_TagString: Gold
@@ -1172,7 +1264,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0.1
   m_AngularDrag: 1.5
-  m_GravityScale: 1
+  m_GravityScale: 1.8
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -1184,6 +1276,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &6195908805250344830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3854781807941745196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7670298fa07587a4292870b9adb37966, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4077716957302744606
 GameObject:
   m_ObjectHideFlags: 0
@@ -1196,6 +1300,7 @@ GameObject:
   - component: {fileID: 8389857010142832634}
   - component: {fileID: 4340852014362039960}
   - component: {fileID: 29767695808506831}
+  - component: {fileID: 8772217018484389626}
   m_Layer: 9
   m_Name: coin (2)
   m_TagString: Gold
@@ -1320,7 +1425,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0.1
   m_AngularDrag: 1.5
-  m_GravityScale: 1
+  m_GravityScale: 1.8
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -1332,6 +1437,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &8772217018484389626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4077716957302744606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7670298fa07587a4292870b9adb37966, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4261112467877320233
 GameObject:
   m_ObjectHideFlags: 0
@@ -1344,6 +1461,7 @@ GameObject:
   - component: {fileID: 6308022100154023403}
   - component: {fileID: 5956968606461118939}
   - component: {fileID: 6739757025957794353}
+  - component: {fileID: 7785760823622943480}
   m_Layer: 9
   m_Name: coin (17)
   m_TagString: Gold
@@ -1468,7 +1586,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0.1
   m_AngularDrag: 1.5
-  m_GravityScale: 1
+  m_GravityScale: 1.8
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -1480,6 +1598,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &7785760823622943480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4261112467877320233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7670298fa07587a4292870b9adb37966, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5145034442172146642
 GameObject:
   m_ObjectHideFlags: 0
@@ -1492,6 +1622,7 @@ GameObject:
   - component: {fileID: 212780360745127331}
   - component: {fileID: 5657926589139469634}
   - component: {fileID: 7142496874642784069}
+  - component: {fileID: 1616161389685335700}
   m_Layer: 9
   m_Name: coin (14)
   m_TagString: Gold
@@ -1616,7 +1747,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0.1
   m_AngularDrag: 1.5
-  m_GravityScale: 1
+  m_GravityScale: 1.8
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -1628,6 +1759,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1616161389685335700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5145034442172146642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7670298fa07587a4292870b9adb37966, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5751337332691930201
 GameObject:
   m_ObjectHideFlags: 0
@@ -1640,6 +1783,7 @@ GameObject:
   - component: {fileID: 350452352582595336}
   - component: {fileID: 6147078512023888095}
   - component: {fileID: 7447588585909662540}
+  - component: {fileID: 2839393967011367870}
   m_Layer: 9
   m_Name: coin (6)
   m_TagString: Gold
@@ -1764,7 +1908,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0.1
   m_AngularDrag: 1.5
-  m_GravityScale: 1
+  m_GravityScale: 1.8
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -1776,6 +1920,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &2839393967011367870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5751337332691930201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7670298fa07587a4292870b9adb37966, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6221227038021768770
 GameObject:
   m_ObjectHideFlags: 0
@@ -1842,6 +1998,7 @@ GameObject:
   - component: {fileID: 2900533219639628496}
   - component: {fileID: 8554917081961893737}
   - component: {fileID: 4012922613222217326}
+  - component: {fileID: 8125929724676802022}
   m_Layer: 9
   m_Name: coin (13)
   m_TagString: Gold
@@ -1966,7 +2123,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0.1
   m_AngularDrag: 1.5
-  m_GravityScale: 1
+  m_GravityScale: 1.8
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -1978,6 +2135,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &8125929724676802022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6296210488668646604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7670298fa07587a4292870b9adb37966, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6508056122511751745
 GameObject:
   m_ObjectHideFlags: 0
@@ -1990,6 +2159,7 @@ GameObject:
   - component: {fileID: 8566949956230634359}
   - component: {fileID: 489980353481517995}
   - component: {fileID: 9077354270316897846}
+  - component: {fileID: 4269241234933155811}
   m_Layer: 9
   m_Name: coin
   m_TagString: Gold
@@ -2114,7 +2284,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0.1
   m_AngularDrag: 1.5
-  m_GravityScale: 1
+  m_GravityScale: 1.8
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -2126,6 +2296,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &4269241234933155811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6508056122511751745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7670298fa07587a4292870b9adb37966, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6617951644480967307
 GameObject:
   m_ObjectHideFlags: 0
@@ -2138,6 +2320,7 @@ GameObject:
   - component: {fileID: 8043324448147076042}
   - component: {fileID: 6589572091015850407}
   - component: {fileID: 5249255863952653207}
+  - component: {fileID: 6992735897762262911}
   m_Layer: 9
   m_Name: coin (5)
   m_TagString: Gold
@@ -2262,7 +2445,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0.1
   m_AngularDrag: 1.5
-  m_GravityScale: 1
+  m_GravityScale: 1.8
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -2274,6 +2457,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &6992735897762262911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6617951644480967307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7670298fa07587a4292870b9adb37966, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7256518571570393578
 GameObject:
   m_ObjectHideFlags: 0
@@ -2286,6 +2481,7 @@ GameObject:
   - component: {fileID: 3530772291999563877}
   - component: {fileID: 838773695332055314}
   - component: {fileID: 1409981137031272032}
+  - component: {fileID: 4361856731070332667}
   m_Layer: 9
   m_Name: coin (15)
   m_TagString: Gold
@@ -2410,7 +2606,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0.1
   m_AngularDrag: 1.5
-  m_GravityScale: 1
+  m_GravityScale: 1.8
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -2422,6 +2618,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &4361856731070332667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7256518571570393578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7670298fa07587a4292870b9adb37966, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7327841139548209101
 GameObject:
   m_ObjectHideFlags: 0
@@ -2434,6 +2642,7 @@ GameObject:
   - component: {fileID: 5022887554304279346}
   - component: {fileID: 4347906954787787910}
   - component: {fileID: 3947730096110969443}
+  - component: {fileID: 7097602370679980171}
   m_Layer: 9
   m_Name: coin (10)
   m_TagString: Gold
@@ -2558,7 +2767,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0.1
   m_AngularDrag: 1.5
-  m_GravityScale: 1
+  m_GravityScale: 1.8
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -2570,6 +2779,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &7097602370679980171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7327841139548209101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7670298fa07587a4292870b9adb37966, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8384690492694215197
 GameObject:
   m_ObjectHideFlags: 0
@@ -2582,6 +2803,7 @@ GameObject:
   - component: {fileID: 5946229320537533071}
   - component: {fileID: 4249332641014719648}
   - component: {fileID: 1214560627429510770}
+  - component: {fileID: 5139533540337231536}
   m_Layer: 9
   m_Name: coin (4)
   m_TagString: Gold
@@ -2706,7 +2928,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0.1
   m_AngularDrag: 1.5
-  m_GravityScale: 1
+  m_GravityScale: 1.8
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -2718,6 +2940,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &5139533540337231536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8384690492694215197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7670298fa07587a4292870b9adb37966, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8400432658957184909
 GameObject:
   m_ObjectHideFlags: 0
@@ -2730,6 +2964,7 @@ GameObject:
   - component: {fileID: 394897156711183418}
   - component: {fileID: 7683642568195296479}
   - component: {fileID: 1177414533185607507}
+  - component: {fileID: 6623144968285259769}
   m_Layer: 9
   m_Name: coin (20)
   m_TagString: Gold
@@ -2854,7 +3089,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0.1
   m_AngularDrag: 1.5
-  m_GravityScale: 1
+  m_GravityScale: 1.8
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -2866,6 +3101,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &6623144968285259769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8400432658957184909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7670298fa07587a4292870b9adb37966, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8548783718384781841
 GameObject:
   m_ObjectHideFlags: 0
@@ -2878,6 +3125,7 @@ GameObject:
   - component: {fileID: 1688186288671245250}
   - component: {fileID: 2279004465663093029}
   - component: {fileID: 6581086379058204362}
+  - component: {fileID: 5546935259736374226}
   m_Layer: 9
   m_Name: coin (8)
   m_TagString: Gold
@@ -3002,7 +3250,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0.1
   m_AngularDrag: 1.5
-  m_GravityScale: 1
+  m_GravityScale: 1.8
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -3014,6 +3262,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &5546935259736374226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8548783718384781841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7670298fa07587a4292870b9adb37966, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8607553439656814790
 GameObject:
   m_ObjectHideFlags: 0
@@ -3026,6 +3286,7 @@ GameObject:
   - component: {fileID: 3171443742795370393}
   - component: {fileID: 6658685881303057979}
   - component: {fileID: 1447494142032369052}
+  - component: {fileID: 4839182371859467788}
   m_Layer: 9
   m_Name: coin (19)
   m_TagString: Gold
@@ -3150,7 +3411,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0.1
   m_AngularDrag: 1.5
-  m_GravityScale: 1
+  m_GravityScale: 1.8
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -3162,6 +3423,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &4839182371859467788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8607553439656814790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7670298fa07587a4292870b9adb37966, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8651392133242713770
 GameObject:
   m_ObjectHideFlags: 0
@@ -3174,6 +3447,7 @@ GameObject:
   - component: {fileID: 5333302438181843587}
   - component: {fileID: 2479101209942265971}
   - component: {fileID: 3719911090974384695}
+  - component: {fileID: 6632421635754957422}
   m_Layer: 9
   m_Name: coin (9)
   m_TagString: Gold
@@ -3298,7 +3572,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0.1
   m_AngularDrag: 1.5
-  m_GravityScale: 1
+  m_GravityScale: 1.8
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -3310,6 +3584,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &6632421635754957422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8651392133242713770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7670298fa07587a4292870b9adb37966, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &9182149640615532660
 GameObject:
   m_ObjectHideFlags: 0
@@ -3322,6 +3608,7 @@ GameObject:
   - component: {fileID: 1990058485592931737}
   - component: {fileID: 6465385187985080117}
   - component: {fileID: 2469184829306296097}
+  - component: {fileID: 8144778370661333111}
   m_Layer: 9
   m_Name: coin (21)
   m_TagString: Gold
@@ -3446,7 +3733,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0.1
   m_AngularDrag: 1.5
-  m_GravityScale: 1
+  m_GravityScale: 1.8
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -3458,3 +3745,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &8144778370661333111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9182149640615532660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7670298fa07587a4292870b9adb37966, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

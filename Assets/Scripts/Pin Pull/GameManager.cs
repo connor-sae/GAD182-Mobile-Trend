@@ -29,8 +29,9 @@ public class GameManager : MonoBehaviour
         }
 
         availableStates = progressionStates;
+        gameOver = false;
     }
-    public bool gameOver;
+    [HideInInspector] public bool gameOver = false;
     public void PinPulled(int ID)
     {
 
@@ -75,17 +76,19 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("Game Win");
         gameOver = true;
+        StartCoroutine(ShowGameOverScreen(true));
     }
 
     public void OnGameLose()
     {
         Debug.Log("Game Lose");
         gameOver = true;
+        StartCoroutine(ShowGameOverScreen(false));
     }
 
-    IEnumerator ShowGameOverScreen(float delay, bool won)
+    IEnumerator ShowGameOverScreen(bool won)
     {
-        yield return new WaitForSeconds(delay);
+        yield return new WaitForSeconds(gameOverScreenDelay);
         if (won)
             winScreen.SetActive(true);
         else

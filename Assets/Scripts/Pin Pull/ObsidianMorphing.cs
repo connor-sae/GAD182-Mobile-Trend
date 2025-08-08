@@ -46,13 +46,15 @@ public class ObsidianMorphing : MonoBehaviour
 
     private void ConvertNear()
     {
-        LayerMask waterLavaLayer = (1 << 6) | (1 << 7); // 192
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, nearConvertRadius, waterLavaLayer);
+        LayerMask waterLavaGoldLayer = (1 << 6) | (1 << 7) | (1<<9); // 192
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, nearConvertRadius, waterLavaGoldLayer);
 
         foreach(Collider2D collider in colliders)
         {
-            if (collider.gameObject.layer == 7) Debug.Log("Convert");
-            Convert(collider.gameObject);
+            if (collider.gameObject.layer == 9) 
+                Destroy(collider.gameObject);
+            else
+                Convert(collider.gameObject);
         }
     }
 

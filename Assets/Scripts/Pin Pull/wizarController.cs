@@ -28,11 +28,10 @@ public class wizarController : MonoBehaviour
             anim?.SetBool("Moving", false);
     }
 
-    public void Move(string moveAnim)
+    public void Move()
     {
         navTarget++;
         anim?.SetBool("Moving", true);
-        anim?.SetTrigger(moveAnim);
     }
 
     public void PopNavPoint(Transform navPoint)

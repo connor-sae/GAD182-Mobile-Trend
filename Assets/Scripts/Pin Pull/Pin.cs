@@ -6,7 +6,7 @@ using UnityEngine.Events;
 
 public class Pin : MonoBehaviour
 {
-    public UnityEvent OnPulled;
+    public int pinID;
     private Animator pinAnim;
     private BoxCollider2D clickBox;
     public bool blocked = false;
@@ -23,15 +23,17 @@ public class Pin : MonoBehaviour
 
     private void OnMouseDown()
     {
+        if (GameManager.Instance.gameOver) return;
+
         if (blocked)
         {
             pinAnim.SetTrigger("Fail");
         }
         else
         {
-            OnPulled?.Invoke();
             pinAnim.SetTrigger("Pull");
             clickBox.enabled = false;
+            GameManager.Instance.PinPulled(pinID);
         }
     }
 

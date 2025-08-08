@@ -6,10 +6,9 @@ public class ObstaclesScript : MonoBehaviour
 {
     public int penaltyValue = 1;
 
-    // If you want this to be a trigger instead of a physical collision, check "Is Trigger" on the collider
-    void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player"))
         {
             // Subtract score if ScoreManager exists
             if (ScoreManager.instance != null)
@@ -20,6 +19,8 @@ public class ObstaclesScript : MonoBehaviour
             {
                 Debug.LogWarning("ScoreManager instance not found when hitting obstacle.");
             }
+
+            Destroy(gameObject);
         }
     }
 }

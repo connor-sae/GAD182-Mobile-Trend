@@ -12,7 +12,7 @@ public class wizarController : MonoBehaviour
 
     private void Start()
     {
-        //anim = GetComponent<Animator>();
+        anim = GetComponent<Animator>();
     }
 
 

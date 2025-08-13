@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 60e7aee2830df2747a0f73da53d16ba1, type: 3}
-  m_Name: Minecraft
+  m_Name: Lane Game
   m_EditorClassIdentifier: 
-  name: Terraria
+  name: Lane Game
+  sceneName: LaneGame
   image: {fileID: 21300000, guid: ee8ce5cd9c0883f4182b5cfd43cfd7fe, type: 3}
-  scene:
-    m_Handle: 0
+  sceneCount: 1

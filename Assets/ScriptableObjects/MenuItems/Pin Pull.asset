@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Pin Pull
   sceneName: 'Pin Pull '
-  image: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  image: {fileID: 21300000, guid: d5193a5271da48c4aa15e43767c42b51, type: 3}
   sceneCount: 4

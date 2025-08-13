@@ -66,4 +66,9 @@ public class WinLoseManager : MonoBehaviour
         // Optional: Freeze the game
         Time.timeScale = 0f;
     }
+
+    public void UnFreezeGame()
+    {
+        Time.timeScale = 1;
+    }
 }

@@ -11,4 +11,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Gem MicroGame.unity
     guid: bc349672411e99a449a17ead16840deb
+  - enabled: 1
+    path: Assets/Scenes/Pin Pull 1.unity
+    guid: aa795f4b9d6d5234da212222f6a3d406
+  - enabled: 1
+    path: Assets/Scenes/Pin Pull 2.unity
+    guid: d5e53e19cefe4594696c01e12279b094
+  - enabled: 1
+    path: Assets/Scenes/Pin Pull 3.unity
+    guid: 4805c9fb973f0a14c888858bce6bfc53
+  - enabled: 1
+    path: Assets/Scenes/Pin Pull 4.unity
+    guid: 99d374ceb3d12134e99709e74ad61ea7
+  - enabled: 1
+    path: Assets/Danilo/Scenes/LaneGame.unity
+    guid: 95d5c60e50477734498138947389f6ae
   m_configObjects: {}

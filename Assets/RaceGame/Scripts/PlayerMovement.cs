@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float forwardSpeed = 5f;
+    public float forwardSpeed = 7f;
     public float sidewaysSpeed = 5f;
     public float jumpForce = 7f;
-    public float groundCheckDistance = 1.1f; // Adjust based on player height
+    public float groundCheckDistance = 1.1f; 
 
     private Rigidbody rb;
 
@@ -18,10 +18,10 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        // Simple raycast to check if we're grounded
+        //raycast to check if the player is grounded
         bool isGrounded = Physics.Raycast(transform.position, Vector3.down, groundCheckDistance);
 
-        // Handle jump input
+        //player can jump
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
@@ -30,17 +30,17 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        // Auto move forward
-        Vector3 move = transform.forward * forwardSpeed;
+        //always move forward
+        Vector3 forwardMove = transform.forward * forwardSpeed;
 
-        // Side movement (A/D or Left/Right arrow)
-        float sideways = Input.GetAxis("Horizontal");
-        move += transform.right * sideways * sidewaysSpeed;
+        //player manually moves sideways
+        float horizontal = Input.GetAxis("Horizontal");
+        Vector3 strafeMove = transform.right * horizontal * sidewaysSpeed;
 
-        // Keep vertical velocity for jumping/gravity
-        move.y = rb.velocity.y;
+        //combine forward and sideways movement
+        Vector3 move = new Vector3(strafeMove.x, rb.velocity.y, forwardMove.z);
+        rb.velocity = transform.TransformDirection(move);
 
-        // Apply movement
         rb.velocity = move;
     }
 }

@@ -6,14 +6,14 @@ public class ObstaclesScript : MonoBehaviour
 {
     public int penaltyValue = 1;
 
+    //if the player triggers an obstacle then decrease the player's score
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            // Subtract score if ScoreManager exists
             if (ScoreManager.instance != null)
             {
-                ScoreManager.instance.AddScore(-penaltyValue); // negative to reduce
+                ScoreManager.instance.AddScore(-penaltyValue); 
             }
             else
             {

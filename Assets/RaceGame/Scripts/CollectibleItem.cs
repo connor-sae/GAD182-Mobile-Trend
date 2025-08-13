@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CollectibleItem : MonoBehaviour
 {
-    public int scoreValue = 1; // How much score this item gives
+    public int scoreValue = 1; 
 
     //if something with the player tag collides with the collectible item it adds to the score and destroys the game object
     void OnTriggerEnter(Collider other)

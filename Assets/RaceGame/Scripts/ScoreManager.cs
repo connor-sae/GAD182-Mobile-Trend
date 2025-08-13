@@ -29,6 +29,11 @@ public class ScoreManager : MonoBehaviour
         UpdateScoreUI();
     }
 
+    public int GetCoinCount()
+    {
+        return score;
+    }
+
     //update the score in the textmeshproui
     void UpdateScoreUI()
     {

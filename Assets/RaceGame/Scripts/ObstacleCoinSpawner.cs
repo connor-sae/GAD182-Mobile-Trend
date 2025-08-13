@@ -7,12 +7,10 @@ public class ObstacleCoinSpawner : MonoBehaviour
     
     public GameObject collectiblePrefab;
     public GameObject obstaclePrefab;
-    public Transform spawnArea; // The platform or area to spawn on
-
-    
+    public Transform spawnArea; 
     public int collectibleCount = 5;
     public int obstacleCount = 5;
-    public float minSpacing = 1.0f; // Minimum distance between any two spawned items
+    public float minSpacing = 1.0f; 
 
     private List<Vector3> usedPositions = new List<Vector3>();
 
@@ -22,6 +20,7 @@ public class ObstacleCoinSpawner : MonoBehaviour
         SpawnObjects(obstaclePrefab, obstacleCount);
     }
 
+    // 
     void SpawnObjects(GameObject prefab, int count)
     {
         Bounds bounds = spawnArea.GetComponent<Collider>().bounds;
@@ -33,16 +32,14 @@ public class ObstacleCoinSpawner : MonoBehaviour
 
             do
             {
-                // Pick a random position within platform bounds
                 float x = Random.Range(bounds.min.x, bounds.max.x);
                 float z = Random.Range(bounds.min.z, bounds.max.z);
-                float y = bounds.max.y; // Top of platform
+                float y = bounds.max.y;
 
                 spawnPos = new Vector3(x, y, z);
 
                 attempts++;
 
-                // Safety limit to prevent infinite loops
                 if (attempts > 100) break;
 
             } while (!IsPositionValid(spawnPos));
@@ -58,7 +55,7 @@ public class ObstacleCoinSpawner : MonoBehaviour
         {
             if (Vector3.Distance(position, usedPos) < minSpacing)
             {
-                return false; // Too close to another object
+                return false;
             }
         }
         return true;

@@ -43,7 +43,7 @@ public class GemMatchManager : MonoBehaviour
 
     private void Start()
     {
-        
+
         envioronmentVersion = Random.Range(0, envioronments.Length);
 
         envioronmentRenderer.sprite = envioronments[envioronmentVersion].dangerEnv;
@@ -95,8 +95,8 @@ public class GemMatchManager : MonoBehaviour
     private IEnumerator ShowScreen(bool win)
     {
         yield return new WaitForSeconds(3f);
-    
-        if(win)
+
+        if (win)
             winScreen.SetActive(true);
         else
             loseScreen.SetActive(true);
@@ -107,11 +107,15 @@ public class GemMatchManager : MonoBehaviour
         score += amount;
         ScoreText.text = score + " / " + maxScore;
 
-        if(score >= maxScore)
+        if (score >= maxScore)
         {
             OnGameWin();
         }
     }
 
+    public void returnToMainMenu()
+    {
+        SceneLoader.Instance?.Load("MainMenu");
+    }
 
 }

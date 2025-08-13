@@ -9,14 +9,15 @@ using UnityEngine.UI;
 public class MenuItem : ScriptableObject
 {
     public new string name;
+    public string sceneName;
     public Sprite image;
     public int sceneCount = 1;
 
     public void Load()
     {
         if (sceneCount <= 1)
-            SceneLoader.Instance.Load(name);
+            SceneLoader.Instance.Load(sceneName);
         else
-            SceneLoader.Instance.LoadRandom(name, sceneCount);
+            SceneLoader.Instance.LoadRandom(sceneName, sceneCount);
     }
 }

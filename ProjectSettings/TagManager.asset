@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Lava
+  - Water
+  - Gold
   layers:
   - Default
   - TransparentFX
@@ -11,10 +14,10 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
+  - Fluid_Water
+  - Fluid_Lava
+  - Fluid_Obsidian
+  - Gold
   - 
   - 
   - 
@@ -41,11 +44,11 @@ TagManager:
   - name: BG
     uniqueID: 2188266495
     locked: 0
-  - name: Default
-    uniqueID: 0
-    locked: 0
   - name: Player
     uniqueID: 1338425869
+    locked: 0
+  - name: Default
+    uniqueID: 0
     locked: 0
   - name: Game
     uniqueID: 2228618585

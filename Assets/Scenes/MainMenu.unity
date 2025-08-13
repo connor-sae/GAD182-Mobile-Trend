@@ -502,6 +502,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: fccd6e51592df9241bfc6ed88ad726a6, type: 2}
   - {fileID: 11400000, guid: 5427288672da2774780c12045d609439, type: 2}
   - {fileID: 11400000, guid: 27bd1a06902a3cd428258c30115fa1e9, type: 2}
+  - {fileID: 11400000, guid: b13451252117ce444a8213db1e57b3f1, type: 2}
   menuAnim: {fileID: 555627918}
   charAnim: {fileID: 2054994097}
 --- !u!95 &555627918

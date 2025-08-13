@@ -43,7 +43,7 @@ public class WinLoseConditions : MonoBehaviour
         DisablePlayerControl();
     }
 
-    void ShowLosePanel()
+    public void ShowLosePanel()
     {
         if (losePanel != null)
             losePanel.SetActive(true);

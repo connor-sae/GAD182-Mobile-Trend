@@ -34,7 +34,7 @@ public class SceneLoader : MonoBehaviour
 
     public void LoadRandom(string sceneNamePrefix, int sceneCount)
     {
-        Load(sceneNamePrefix.ToString() + Random.Range(0, sceneCount));
+        Load(sceneNamePrefix.ToString() + Random.Range(1, sceneCount + 1));
     }
 
     private IEnumerator Transition()

@@ -28,17 +28,21 @@ public class MenuManager : MonoBehaviour
     }
 
     // Update is called once per frame
+    bool inputLock;
     void Update()
     {
         if (menuItems.Length > 0)
         {
-            if (Input.GetKeyDown(KeyCode.UpArrow))
-                Swipe(1);
-            
-            if (Input.GetKeyDown(KeyCode.DownArrow))
-                Swipe(-1);
+            if (!inputLock)
+            {
+                if (Input.GetKeyDown(KeyCode.UpArrow))
+                    Swipe(1);
 
-            if(Input.GetKeyDown(KeyCode.Return))
+                if (Input.GetKeyDown(KeyCode.DownArrow))
+                    Swipe(-1);
+            }
+
+            if (Input.GetKeyDown(KeyCode.Return))
             {
                 menuItems[currentItem].Load();
             }
@@ -47,6 +51,7 @@ public class MenuManager : MonoBehaviour
 
     private void Swipe(int direction)
     {
+        inputLock = true;
         charAnim.SetTrigger("UsePhone");
         menuAnim.SetInteger("Dir", direction);
         menuAnim.SetTrigger("Swipe");
@@ -68,5 +73,10 @@ public class MenuManager : MonoBehaviour
     {
         secondaryText.text = menuItems[currentItem].name;
         secondaryImage.sprite = menuItems[currentItem].image;
+    }
+
+    public void UnlockInput()
+    {
+        inputLock = false;
     }
 }

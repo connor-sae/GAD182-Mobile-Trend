@@ -41,6 +41,7 @@ public class WinLoseConditions : MonoBehaviour
 
        
         DisablePlayerControl();
+        FindAnyObjectByType<KillBox>().gameObject.SetActive(false);
     }
 
     public void ShowLosePanel()

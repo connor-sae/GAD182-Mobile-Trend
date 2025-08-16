@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Lane Game
   sceneName: LaneGame
-  image: {fileID: 21300000, guid: ee8ce5cd9c0883f4182b5cfd43cfd7fe, type: 3}
+  image: {fileID: 21300000, guid: d7f809af3b4e8a245829cdd6251e2f12, type: 3}
   sceneCount: 1
